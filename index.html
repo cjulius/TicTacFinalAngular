@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html x-ng-app>
+	<head>
+		<title>TicTacThrones</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Almendra+SC' rel='stylesheet' type='text/css'>
+		<meta charset="UTF-8">
+	</head>
+	<header>
+		<div class="box">
+			<!-- <h1>Tic Tac Thrones</h1> -->
+		</div>
+	</header>
+<body ng-controller="boardCtrl">
+	<div class="main">
+		<div class="gameBoard">
+			<div>
+				<div class="message"><h1>{{winner}}</h1></div>
+				<div ng-repeat="box in boxes track by $index" x-ng-class="{cell:true, clear: $index % 3 == 0}" x-ng-click="takeTurn($index)">
+				<img src = "{{box}}" />
+				</div>
+			</div>
+		</div>
+		<div class="popUP">{{winner}}
+		<input type="button" x-ng-click="resetBoard()" value="Reset"/>
+		</div>
+	</div>
+	<div class="column1">Tyrion</div>
+	<div class="column2">Daenerys</div>
+
+	
+</body>
+</html>
+
+<!-- 
+
+$scope.boardactive = true
+
+false (off ng-click)
+
+.js
+ng-click = $scope.board($index) -->

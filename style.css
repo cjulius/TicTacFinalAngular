@@ -1,0 +1,99 @@
+body{
+	width: 100%;
+	background-color: black;
+    background-image: url('http://static.hothdwallpaper.net/51af1fc24c53a43174.jpg');
+   	/*background-image: url('http://images4.fanpop.com/image/photos/21400000/House-Stark-game-of-thrones-21499072-1680-1050.jpg');*/
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*h1{
+    color: #707070;
+    text-align: center;
+    font-family: 'Almendra SC', serif;
+    font-size: 60px;
+    padding-top: 10px;
+}*/
+.box
+{
+/*    background-color: rgba( 50, 50, 50, 0.9);*/
+   	opacity: 1.0;
+	height: 100px;
+	margin-bottom: 13px;
+	/*margin-top: -40px;*/
+	background-image: url('http://gametaffy.com/wp-content/uploads/2012/02/gameofthrones_logo.png');
+	background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cell {
+	width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    float: left;
+    transition: 1s;
+    font-size: 100px;
+    color: #707070;
+    font-family: 'Almendra SC', serif;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.cell:hover {
+	background-color: #707070;
+}
+
+.clear {
+	clear:both;
+}
+
+.message {
+	margin: 5px;
+}
+.main {
+	width: 100%;
+}
+.gameBoard {
+	height: 470px;
+	width: 470px;
+	margin: 0 auto;
+}
+.column1, .column2 {
+    width: 220px;
+    height: 400px;
+    display: inline-block;
+    float: right;
+    background-image: url('http://www.westeros.org/GoT/Graphics/Gallery/GameOfThrones_Tyrion_01.png');
+    background-size: auto 100%;
+    color: #707070;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Almendra SC', serif;
+    font-size: 40px;
+    border: 8px solid #707070;
+    border-style: ridge;
+    margin-top: -419px;
+}
+.column2 {
+    float: left;
+    background-image: url('http://images4.fanpop.com/image/photos/17200000/Daenerys-Targaryen-game-of-thrones-17284597-750-1127.jpg');
+  /*  margin-top: -460px;*/    
+}
+.column1{
+	margin-right: 10px;
+}
+img {
+	height: 150px;
+	width: 150px
+}
+
+.popUP {
+	background-image: url('https://archive.nyafuu.org/foolfuuka/boards/wg/image/1368/93/1368932415384.jpg');
+	height: 400px;
+	width: 400px;
+	opacity: 0.9;
+	display: none;
+	margin: auto 0;
+}
+
