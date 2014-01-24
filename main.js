@@ -55,7 +55,12 @@ function boardCtrl ($scope) {
 	
 };
 
-var values = [{name: "Tyrion", image: "images/TyrionFace.jpg"}, {name: "Daenerys", image: "images/DanyFace.jpg"}, {name: "Drogo.jpg", image: "images/DrogoFace.jpg"}, {name: "Joffrey", image: "images/JoffreyFace.jpg"}];
+// var values = {name: '', image: ''};
+// var log = [];
+// angular.forEach(values, function(value, key){
+// 	this.push(key + ': ' + value);
+// }, log);
+// expect(log).toEqual([{name: "Tyrion", image: "images/TyrionFace.jpg"}, {name: "Daenerys", image: "images/DanyFace.jpg"}, {name: "Drogo.jpg", image: "images/DrogoFace.jpg"}, {name: "Joffrey", image: "images/JoffreyFace.jpg"}];)
 
 function playersCtrl($scope) {
 	$scope.playerSelect = [0, 0];
