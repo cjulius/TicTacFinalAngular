@@ -37,30 +37,35 @@ function boardCtrl ($scope) {
 			for (var i = 0; i < 8; i++) {
 				if ($scope.boxes[$scope.winAry[i][0]] == $scope.boxes[$scope.winAry[i][1]] && $scope.boxes[$scope.winAry[i][0]] == $scope.boxes[$scope.winAry[i][2]] && $scope.boxes[$scope.winAry[i][0]] !== "") {
 						if ($scope.xTurn == $scope.players[0].image){
-							$scope.winner = "O WIN!";
+							$scope.winner = "O WIN!"
+							break;
 							console.log($scope.turnCounter + " " + $scope.win)
 
 						}
 						else if ($scope.xTurn == $scope.players[1].image){
-							$scope.winner = "X WIN!";
+							$scope.winner = "X WIN!"
+							break;
 							console.log($scope.turnCounter + " " + $scope.win)
 						};
 						$scope.win = true;
 			};
 			if($scope.turnCounter == 10 && $scope.win==false) {
-				alert('DRAW');
+				alert('DRAW')
+				break;
 			}
 		}
 	};
 	
 };
 
-// var values = {name: '', image: ''};
+// values.player1.name == "Tyrion"
+
+// var values = { player1: {name: "Tyrion", image: "images/TyrionFace.jpg"}, {name: "Daenerys", image: "images/DanyFace.jpg"}, {name: "Drogo.jpg", image: "images/DrogoFace.jpg"}, {name: "Joffrey", image: "images/JoffreyFace.jpg"}};
 // var log = [];
-// angular.forEach(values, function(value, key){
+// angular.forEach(values, function(object, player){
 // 	this.push(key + ': ' + value);
 // }, log);
-// expect(log).toEqual([{name: "Tyrion", image: "images/TyrionFace.jpg"}, {name: "Daenerys", image: "images/DanyFace.jpg"}, {name: "Drogo.jpg", image: "images/DrogoFace.jpg"}, {name: "Joffrey", image: "images/JoffreyFace.jpg"}];)
+// expect(log).toEqual()
 
 function playersCtrl($scope) {
 	$scope.playerSelect = [0, 0];
